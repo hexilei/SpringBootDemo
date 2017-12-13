@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: rmbin-basic-param
+Implementation-Version: 0.0.1
+Built-By: louis-he
+Implementation-Vendor-Id: com.rmbin
+Build-Jdk: 1.8.0_25
+Implementation-URL: http://projects.spring.io/spring-boot/springboot/b
+ asic-param/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <groupId>com.rmbin</groupId>
+  <artifactId>basic-param</artifactId>
+  <version>0.0.1</version>
+  <name>rmbin-basic-param</name>
+  <packaging>jar</packaging>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.rmbin</groupId>
+    <artifactId>springboot</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.rmbin</groupId>
+  		<artifactId>rmbin-common</artifactId>
+  		<version>0.0.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-test</artifactId>
+  	</dependency>
+  </dependencies>
+
+</project>
