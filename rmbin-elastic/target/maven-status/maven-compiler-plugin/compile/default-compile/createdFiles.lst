@@ -1,0 +1,6 @@
+com\rmbin\elastic\model\UserElasModel.class
+org\rmbin\elastic\App.class
+com\rmbin\elastic\service\UserService.class
+com\rmbin\elastic\service\UserServiceImpl.class
+com\rmbin\elastic\controller\UserAddController.class
+com\rmbin\elastic\repository\UserRepository.class

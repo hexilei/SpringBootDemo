@@ -1,0 +1,3 @@
+com\rmbin\swagger\App.class
+com\rmbin\swagger\conf\SwaggerConfiguration.class
+com\rmbin\swagger\controller\SwaggerHello.class
