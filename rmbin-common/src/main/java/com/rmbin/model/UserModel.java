@@ -1,9 +1,8 @@
 package com.rmbin.model;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.util.List;
-
-import org.springframework.data.elasticsearch.annotations.Document;
 
 public class UserModel implements Serializable{
 	
@@ -20,6 +19,12 @@ public class UserModel implements Serializable{
 	
 	private boolean sexy;
 	
+	private Date cratedDate;
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 	private List<ContactModel> contacts;
 	
 	public UserModel(String userId,String userName)
@@ -66,6 +71,14 @@ public class UserModel implements Serializable{
 
 	public void setContacts(List<ContactModel> contacts) {
 		this.contacts = contacts;
+	}
+	
+	public Date getCratedDate() {
+		return cratedDate;
+	}
+
+	public void setCratedDate(Date cratedDate) {
+		this.cratedDate = cratedDate;
 	}
 	
 	@Override

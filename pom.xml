@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.rmbin</groupId>
 	<artifactId>rmbin-parent</artifactId>
@@ -16,10 +14,11 @@
 		<module>rmbin-swagger</module>
 		<module>rmbin-thymeleaf</module>
 		<module>rmbin-customizedElastic</module>
-	</modules>
+	    <module>rmbin-jpa</module>
+ 	</modules>
 
 	<properties>
-		<springboot.version>1.5.9.RELEASE</springboot.version>
+		<springboot.version>1.5.8.RELEASE</springboot.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<swagger.version>2.7.0</swagger.version>
 		<postgres.version>42.1.4</postgres.version>
@@ -31,7 +30,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
+		<version>1.5.8.RELEASE</version>
 	</parent>
 
 	<dependencies>
