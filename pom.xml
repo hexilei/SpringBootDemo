@@ -23,8 +23,6 @@
 		<swagger.version>2.7.0</swagger.version>
 		<postgres.version>42.1.4</postgres.version>
 		<jackson.xml.version>2.8.6</jackson.xml.version>
-		<springboot.mybatis.version>1.3.1</springboot.mybatis.version>
-		<mybatis.version>3.4.5</mybatis.version>
 		<junit.version>4.12</junit.version>
 		<elastic.version></elastic.version>
 	</properties>
@@ -40,7 +38,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!-- 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -50,6 +48,7 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<version>${springboot.version}</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
@@ -81,19 +80,20 @@
 			<version>${springboot.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>${springboot.mybatis.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>${mybatis.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+        <plugins>
+		<!--
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+			-->
+        </plugins>
+    </build>
 </project>

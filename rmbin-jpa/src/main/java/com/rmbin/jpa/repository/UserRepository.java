@@ -2,17 +2,27 @@ package com.rmbin.jpa.repository;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import com.rmbin.model.UserModel;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
-@Mapper
-public interface UserRepository {
+import org.springframework.stereotype.Repository;
+
+import com.rmbin.jpa.entity.User;
+
+@Repository
+public class UserRepository{
 	
-	@Select("SELECT userId, userName, sexy, email, createDate from user")
-	public List<UserModel> getAllUsers();
+	@PersistenceContext 
+	private EntityManager entityManager;
 	
-	@Select("SELECT userId,userName,sexy,email,createDate from user where userName=?")
-	public UserModel getUserByUserName(String userName);
+	public List<User> findAll()
+	{
+		return this.entityManager.createQuery("SELECT * from user t",User.class).getResultList();
+	}
+	
+	public User getUserByUserName(String userName)
+	{
+		return this.entityManager.createQuery("SELECT * FROM user where userName = '" +userName + "'",User.class).getSingleResult();
+	}
 
 }

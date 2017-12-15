@@ -2,7 +2,7 @@ package com.rmbin.model;
 
 import java.io.Serializable;
 
-public class ContactModel implements Serializable{
+public class ContactModel extends Entity implements Serializable{
 
 	/**
 	 * 

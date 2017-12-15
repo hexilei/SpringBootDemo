@@ -17,18 +17,16 @@ public class ElasticSearchClient implements FactoryBean<TransportClient>,Initial
 	
 	private static final Log logger = LogFactory.getLog(ElasticSearchClient.class);
 	
-	@Value("${elasticsearch.clustername}")
+	@Value("${my_elasticsearch.clustername}")
 	private String cluserName;
 	
-	@Value("${elasticsearch.port}")
+	@Value("${my_elasticsearch.port}")
 	private int port;
 	
-	@Value("${elasticsearch.hostName}")
+	@Value("${my_elasticsearch.hostName}")
 	private String hostName;
 	
 	private TransportClient transClient;
-	
-	private PreBuiltTransportClient PreBuiltTransportClient;
 
 	@Override
 	public void destroy() throws Exception {
@@ -71,8 +69,8 @@ public class ElasticSearchClient implements FactoryBean<TransportClient>,Initial
 	protected void buildClient() throws Exception
 	{
 		Settings settings = Settings.builder().put("cluster.name", cluserName).put("client.transport.sniff",true).build();
-		PreBuiltTransportClient = new PreBuiltTransportClient(settings);
-		transClient = PreBuiltTransportClient.addTransportAddress(new TransportAddress(InetAddress.getByName(hostName),port));
+		PreBuiltTransportClient preBuiltTransportClient  = new PreBuiltTransportClient(settings);
+		transClient = preBuiltTransportClient.addTransportAddress(new TransportAddress(InetAddress.getByName(hostName),port));
 		
 	}
 

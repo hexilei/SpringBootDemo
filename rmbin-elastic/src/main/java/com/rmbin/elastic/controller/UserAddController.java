@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rmbin.model.UserModel;
-
 @RestController
 @RequestMapping(value="/elastic/user")
 public class UserAddController {
@@ -20,7 +18,7 @@ public class UserAddController {
 	private UserServiceImpl userService;
 
 	@RequestMapping(value="/add",method=RequestMethod.GET,produces={"application/json;charset=UTF-8"})
-	public UserModel addUser()
+	public UserElasModel addUser()
 	{
 		UserElasModel user = new UserElasModel("firstUserInElastic", "Louis");
 		userService.saveUser(user);

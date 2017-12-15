@@ -1,4 +1,4 @@
-package org.rmbin.elastic;
+package com.rmbin.elastic;
 
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;

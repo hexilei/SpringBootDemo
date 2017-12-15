@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
 
-public class UserModel implements Serializable{
+public class UserModel extends Entity implements Serializable{
 	
 	/**
 	 * 
