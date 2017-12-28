@@ -15,7 +15,9 @@
 		<module>rmbin-thymeleaf</module>
 		<module>rmbin-customizedElastic</module>
 	    <module>rmbin-jpa</module>
- 	</modules>
+    	<module>rmbin-dp-dao</module>
+    	<module>rmbin-janino</module>
+	</modules>
 
 	<properties>
 		<springboot.version>1.5.8.RELEASE</springboot.version>
@@ -24,7 +26,7 @@
 		<postgres.version>42.1.4</postgres.version>
 		<jackson.xml.version>2.8.6</jackson.xml.version>
 		<junit.version>4.12</junit.version>
-		<elastic.version></elastic.version>
+		<elastic.version/>
 	</properties>
 
 	<parent>

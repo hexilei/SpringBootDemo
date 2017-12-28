@@ -9,7 +9,7 @@ public class ElasticSearchUtil {
 	
 	public void getJsonResult(TransportClient client)
 	{
-		XContentFactory.jsonBuilder().
+		//XContentFactory.jsonBuilder().
 	}
 
 }
