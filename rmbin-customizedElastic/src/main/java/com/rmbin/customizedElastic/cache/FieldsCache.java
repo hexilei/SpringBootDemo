@@ -47,9 +47,9 @@ public class FieldsCache {
 			listedFields.addAll(filterFields(parent.getDeclaredFields())); 
 			parent = parent.getSuperclass();
 		}
-		sr = new SoftReference<Field[]>((Field[])listedFields.toArray());
+		sr = new SoftReference<Field[]>(listedFields.toArray(new Field[listedFields.size()]));
 		fields.put(className, sr);
-		return (Field[])listedFields.toArray();
+		return listedFields.toArray(new Field[listedFields.size()]);
 	}
 	
 	public List<Field> filterFields(Field[] fields)
