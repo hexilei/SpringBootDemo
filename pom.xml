@@ -17,7 +17,12 @@
 	    <module>rmbin-jpa</module>
     	<module>rmbin-dp-dao</module>
     	<module>rmbin-janino</module>
-	</modules>
+    	<module>rmbin-netty</module>
+    	<module>rmbin-aspectj</module>
+    	<module>rmbin-kafka-consumer</module>
+    <module>rmbin-kafka-producer</module>
+    <module>rmbin-kafka-stream</module>
+  </modules>
 
 	<properties>
 		<springboot.version>1.5.8.RELEASE</springboot.version>
