@@ -137,4 +137,6 @@ public class ElasticServiceTest {
 		fields.add("firstName");
 		service.scrollPhraseQuery("users", "user",fields, "He");
 	}
+	
+	
 }

@@ -157,7 +157,10 @@ public class ElasticSearchService {
 		{
 			result.add(hit.getSourceAsString());
 		}
-		
+	}
+	
+	public void bulk(String index, String type)
+	{
 		
 	}
 

@@ -20,8 +20,8 @@
     	<module>rmbin-netty</module>
     	<module>rmbin-aspectj</module>
     	<module>rmbin-kafka-consumer</module>
-    <module>rmbin-kafka-producer</module>
-    <module>rmbin-kafka-stream</module>
+    	<module>rmbin-kafka-producer</module>
+    	<module>rmbin-kafka-stream</module>
   </modules>
 
 	<properties>
@@ -90,7 +90,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
-		</dependency>
+  		</dependency>
 	</dependencies>
 	
 	<build>
